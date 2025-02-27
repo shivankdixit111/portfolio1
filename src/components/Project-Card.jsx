@@ -36,7 +36,8 @@ const ProjectCard = ({title, description, imgUrl, projectUrl}) => {
   } 
   const anchorStyle = {
      textDecoration: "none",
-     color: "white"
+     color: "white",
+     cursor: "pointer"
   }
   return (
     <>  
