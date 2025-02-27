@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ProjectCard = ({title, description, imgUrl}) => {
+const ProjectCard = ({title, description, imgUrl, projectUrl}) => {
   const [isHovered, setIsHovered] = useState(false);
   const h1Style = {
     display: "flex",
@@ -34,17 +34,23 @@ const ProjectCard = ({title, description, imgUrl}) => {
   const textCardStyle = {
     display: isHovered ? "block" : "none",
   } 
+  const anchorStyle = {
+     textDecoration: "none",
+     color: "white"
+  }
   return (
     <>  
+     <a href={projectUrl} style={anchorStyle}>
       <div className='project-card' style={cardStyle}   
-        onMouseEnter = {(e) => setIsHovered(true)}
-        onMouseLeave = {(e) => setIsHovered(false)}
-      >
-          <div style = {textCardStyle}  >
-              <h1 style={h1Style}>{title}</h1>
-              <p style={pStyle}>{description}</p> 
-          </div>
-      </div>
+          onMouseEnter = {(e) => setIsHovered(true)}
+          onMouseLeave = {(e) => setIsHovered(false)}
+        >
+            <div style = {textCardStyle}  >
+                <h1 style={h1Style}>{title}</h1>
+                <p style={pStyle}>{description}</p> 
+            </div>
+        </div>
+     </a>
     </>
   )
 }

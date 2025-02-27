@@ -14,22 +14,26 @@ const projects = [
     {
       "title": "RentEase - Rental Platform",
       "description": "A full-stack web app for booking and managing accommodations with authentication and CRUD operations.",
-      "imgUrl": `${rentEase}`
+      "imgUrl": `${rentEase}`,
+      "projectUrl": 'https://rentease-3.onrender.com/listings',
     },
     {
       "title": "Simon Game",
       "description": "A classic Simon memory game built with HTML, CSS, and JavaScript, featuring interactive UI.",
-      "imgUrl": `${simonGame}`
+      "imgUrl": `${simonGame}`,
+      "projectUrl": 'https://shivankdixit111.github.io/Simongame/',
     },
     {
       "title": "Music School",
       "description": "A modern music streaming app built with Next.js, TypeScript, and Acertenity UI.",
-      "imgUrl": `${musicSchool}`
+      "imgUrl": `${musicSchool}`,
+      "projectUrl": 'https://music-school-drauz7byw-shivank-dixits-projects.vercel.app/',
     },
     {
       "title": "To-Do App",
       "description": "A task management app built with ReactJS and Context API for efficient state management.",
-      "imgUrl": `${todoApp}`
+      "imgUrl": `${todoApp}`,
+      "projectUrl": 'https://todo-app-two-rouge.vercel.app/'
     }
   ];
 
