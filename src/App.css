@@ -45,6 +45,7 @@ body{
 }
 
     /* ----- Navbar ----  */
+    
 header{
   background-color: #121212;
   top: 0;
@@ -68,7 +69,7 @@ header{
 } 
  
 
-nav ul{
+nav {
   display: flex;
   gap: 3.2rem;
   align-items: center; 
@@ -131,6 +132,39 @@ nav ul{
      } 
   }
 }
+.hamburger{
+  font-size: 2.4rem;
+  display: none;
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 768px) {
+  .nav-links {
+    /* position: absolute;  */
+    right: 0;
+    width: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+  } 
+  .nav-links.active {
+    display: flex;
+  } 
+
+  .navbar-container{
+    display: flex;
+    flex-direction: column; 
+  }  
+  .hamburger{
+    display: block; 
+    margin-left: 1rem !important;
+  }  
+} 
+
+
 /* --------- navbar ends here -------------*/
 
 /* ------------ banner css --------------- */
@@ -249,7 +283,7 @@ nav ul{
   position: relative;
   background-color: black;  
   width: 100%; 
-  height:170vh;
+  height: 170vh; 
 
   & .about-me-text{
     margin: 2rem 4rem;
@@ -322,7 +356,7 @@ nav ul{
     margin-top: 100rem;
   }
 } 
-/* ------------ about-me MediaQueries (1350px) ------------*/
+/* ------------ about-me MediaQueries (1250px) ------------*/
 @media (max-width: 1250px) {
   .project-card{
     margin: 1rem 1rem !important;
@@ -336,7 +370,7 @@ nav ul{
     margin-left: 0 !important;
   }
 }
-/* ------------ about-me-card-container MediaQueries (1350px) ------------*/
+/* ------------ about-me-card-container MediaQueries (1000px) ------------*/
 @media (max-width: 1000px) {
   .project-card-container{  
     display: grid;
@@ -349,6 +383,9 @@ nav ul{
   .project-card{
     margin: auto !important; 
   }
+  .about-me{
+    height: 200vh;
+  }
 }
 /* ------------ about-me MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
@@ -359,6 +396,7 @@ nav ul{
     height: 180px !important;
     width: 300px !important; 
   }
+  
 }
 /* ------------ about-me-card-container MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
@@ -379,52 +417,14 @@ nav ul{
     margin: auto !important;
   }
 }
- 
 
-
-
-/* --------- ProjectCard  ----------*/
-
-/* .project-card{
-  margin: 3rem 1.5rem;
-  height: 250px;
-  width: 400px;
-  border-radius: 2rem;
-  background-image: url("./assets//images/project-img1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0%; 
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & div{
-    & h1{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2.2rem;
-      font-weight: 500;
-   }
-   & p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: 400;
-      letter-spacing: 0.8px;
-   }
-   display: none;
+@media (max-width:450px) {
+  .about-me{
+    height: 230vh;
   }
 }
-.project-card:hover{
-  background-image: linear-gradient(to right top, #b862b8, #b063bc, #a765c1, #9e66c4, #9468c8);
-  opacity: 1;
-  & div{
-     display:block;
-  }
-} */
+ 
+ 
 
 /* (ii) ---------------- Experience section -----------------*/
 .timeline{
@@ -623,11 +623,11 @@ nav ul{
   background-repeat: no-repeat;
 }
 
-.profile-section{
+.plateform-profile{
    width: 100%;
    height: auto;
-   display: flex; 
-   justify-content: space-around;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
    gap: 15rem; 
 
    & a{
@@ -663,6 +663,19 @@ nav ul{
         color: rgb(201, 37, 182);
      }
    }
+}
+
+@media (max-width: 992px) {
+  .plateform-profile{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+
+    & div{
+      margin: 2rem auto;
+      display: flex;
+    }
+  }
 }
 
 /*-------------- Profile Section Achievments -------------*/
@@ -935,7 +948,7 @@ nav ul{
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   * {
     margin: 0;
     padding: 0;

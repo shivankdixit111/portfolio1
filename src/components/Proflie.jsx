@@ -9,7 +9,7 @@ import { MdOutlineStar } from "react-icons/md";
 const Proflie = () => {
   return (
     <section className='profile-section-container'>
-    <section className='profile-section'>
+    <section className='plateform-profile'>
         <a href="https://leetcode.com/u/dshivank630/">
             <div>
                 <TbBrandLeetcode className='reactIcon leetcode'/>
