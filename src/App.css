@@ -283,7 +283,7 @@ nav {
   position: relative;
   background-color: black;  
   width: 100%; 
-  height: 170vh; 
+  height: 250vh; 
 
   & .about-me-text{
     margin: 2rem 4rem;
@@ -383,9 +383,7 @@ nav {
   .project-card{
     margin: auto !important; 
   }
-  .about-me{
-    height: 200vh;
-  }
+   
 }
 /* ------------ about-me MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
@@ -396,14 +394,12 @@ nav {
     height: 180px !important;
     width: 300px !important; 
   }
-  
 }
 /* ------------ about-me-card-container MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
   .project-card-container{  
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    height: 100vh; 
+    grid-template-columns: repeat(1, 1fr);  
   }
   .project-card{ 
     height: 250px !important;
@@ -418,11 +414,21 @@ nav {
   }
 }
 
-@media (max-width:450px) {
+@media (max-width:768px) {
   .about-me{
-    height: 230vh;
+    height: 270vh;
   }
 }
+@media (max-width:450px) {
+  .about-me{
+    height: 300vh;
+  }
+} 
+@media (max-width:380px) {
+  .about-me{
+    height: 310vh;
+  }
+} 
  
  
 
@@ -535,6 +541,7 @@ nav {
   left: 3.6rem;
   z-index: 11;
 }
+ 
 
 /* -------- media queries Experience section ----------*/
 
