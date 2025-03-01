@@ -169,11 +169,7 @@ nav {
 
 /* ------------ banner css --------------- */
 
-
-.container { 
-  width: 100%;
-  height: 100vh;  
-} 
+ 
 .banner-section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -236,6 +232,11 @@ nav {
      }
   }
 }
+@media (max-width: 1000px) {
+  .banner-section{  
+    height: 140vh;
+  }
+} 
 
 @media (max-width: 800px) {
   .banner-section{ 
@@ -252,6 +253,14 @@ nav {
 }
 
 
+@media (max-width: 550px) {
+  .banner-section{ 
+    grid-template-columns: repeat(1, 1fr); 
+    height: 180vh;
+  }
+} 
+
+
  /* ------------ banner css ends here --------------- */
  
  /*------------- skills -------*/
@@ -265,8 +274,8 @@ nav {
   /* height: 100vh; */
  }
  .skills-section-container{
-    border-radius: 2rem;
-    margin: 2rem 8rem;
+    border-radius: 5rem;
+    margin: 2rem 10rem;
     padding: 3rem;
     background-color: rgb(28, 25, 25);
 
@@ -276,12 +285,25 @@ nav {
       flex-direction: column;
       margin: 0 5rem;
       font-weight: 200 !important;
-      font-size: 2rem ;
+      font-size: 1.8rem !important;
       letter-spacing: 1.2px;
-      line-height: 2.8rem;
+      line-height: 3.2rem;
       color: #cdb9b9;
     } 
  }
+
+@media (max-width:768px) {
+  .skills-section-container{ 
+    margin: 2rem 4rem;
+  }
+}
+@media (max-width:450px) {
+  .skills-section-container{ 
+    margin: 2rem 2rem;
+  }
+}  
+ 
+ 
   
 
 /*-------AboutMe css ---------*/
@@ -296,7 +318,9 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: -1rem 18rem 4rem 18rem!important;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 70%;
     font-weight: 200 !important;
     font-size: 1.9rem !important;
     letter-spacing: 1.2px;
