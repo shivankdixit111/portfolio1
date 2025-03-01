@@ -247,10 +247,11 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
+  /* height: 100vh; */
  }
  .skills-section-container{
     border-radius: 2rem;
-    margin: 5rem;
+    margin: 6rem;
     padding: 3rem;
     background-color: rgb(30, 27, 27);
 
@@ -262,19 +263,7 @@ nav {
       margin: 0 4rem;
     }
  }
- .slider {
-   /* display: flex;
-   justify-content: space-evenly; */
-   padding: 0 6rem;
-   width: 100%;
-}
-
-.slider img {
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  border-radius:10px;
-} 
+  
 
 /*-------AboutMe css ---------*/
 
@@ -282,8 +271,7 @@ nav {
   padding: 80px 0;
   position: relative;
   background-color: black;  
-  width: 100%; 
-  height: 250vh; 
+  width: 100%;  
 
   & .about-me-text{
     margin: 2rem 4rem;
@@ -342,10 +330,11 @@ nav {
   grid-template-columns: repeat(3, 1fr); 
   overflow: hidden;   
   width: 100% !important;
-  margin: 4rem !important;
+  margin: 4rem !important;  
+  gap: 2rem;
 }
 
-/* ------------ about-me MediaQueries (1350px) ------------*/
+/* ------------ projectCard MediaQueries (1350px) ------------*/
 @media (max-width: 1400px) {
   .project-card{
     margin: 2rem 1rem;
@@ -356,7 +345,7 @@ nav {
     margin-top: 100rem;
   }
 } 
-/* ------------ about-me MediaQueries (1250px) ------------*/
+/* ------------ projectCard MediaQueries (1250px) ------------*/
 @media (max-width: 1250px) {
   .project-card{
     margin: 1rem 1rem !important;
@@ -370,7 +359,7 @@ nav {
     margin-left: 0 !important;
   }
 }
-/* ------------ about-me-card-container MediaQueries (1000px) ------------*/
+/* ------------ project-card-card-container MediaQueries (1000px) ------------*/
 @media (max-width: 1000px) {
   .project-card-container{  
     display: grid;
@@ -385,17 +374,17 @@ nav {
   }
    
 }
-/* ------------ about-me MediaQueries (800px) ------------*/
+/* ------------ project-card MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
   .project-card-container{   
     gap: 3rem;
   }
   .project-card{ 
     height: 180px !important;
-    width: 300px !important; 
+    width: 300px !important;  
   }
 }
-/* ------------ about-me-card-container MediaQueries (800px) ------------*/
+/* ------------ project-card-card-container MediaQueries (800px) ------------*/
 @media (max-width: 800px) {
   .project-card-container{  
     display: grid;
@@ -404,7 +393,6 @@ nav {
   .project-card{ 
     height: 250px !important;
     width: 80% !important; 
-    margin: auto !important;
   }
   .project-card:nth-child(1), .project-card:nth-child(3){  
     margin: auto !important;
@@ -414,6 +402,22 @@ nav {
   }
 }
 
+ 
+@media (max-width:1500px) {
+  .about-me{
+    height: 170vh;
+  }
+}
+@media (max-width:1200px) {
+  .about-me{
+    height: 230vh;
+  }
+}
+@media (max-width:768px) {
+  .about-me{
+    height: 270vh;
+  }
+}
 @media (max-width:768px) {
   .about-me{
     height: 270vh;
@@ -722,6 +726,7 @@ nav {
 
 /*--------=--- Skills -------------*/
 .skills-section{
+  /* height: 100vh !important; */
   & p{
     display: flex;
     flex-wrap: wrap;
@@ -731,8 +736,11 @@ nav {
   }
   & div{
      margin-top: 2rem;
-  }
+  } 
 }
+
+
+
 
 /* --------- Contact  -------------*/
 .contact-container{

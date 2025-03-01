@@ -9,6 +9,7 @@ import Banner from './components/Banner'
 import Project from './components/AboutMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import SkillCard from './components/Skill-Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,7 @@ function App() {
       <Skills/>
       <Project/> 
       <Contact/> 
-      <Footer/>  
+      <Footer/>   
     </>
   )
 }
