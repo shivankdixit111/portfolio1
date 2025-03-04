@@ -14,7 +14,7 @@ const Banner = () => {
                 <p>Welcome to my portfolio website! I am a Prefinal Year student pursuing B.Tech in Computer Science and Engineering. With a strong passion for technology, I am constantly exploring new advancements and utilizing them to solve real-life problems. Thank you for visiting my portfolio website. 
                   Please feel free to explore my work and get in touch for any opportunities or collaborations.
                 </p>
-                <a href="https://drive.google.com/file/d/1K3rFRbiH6vYVW8JEyVXfNw5aIAxwMChC/view?usp=drivesdk">Download Resume <FaRegArrowAltCircleRight className='reactIcon' /></a>
+                <a href="https://drive.google.com/file/d/1Su-rym__3A5C907Cg-J5P1Vow_8gwKy0/view">Download Resume <FaRegArrowAltCircleRight className='reactIcon' /></a>
             </div>
              <div className="banner-image"> 
                 <img src={bannerImg} alt="" />

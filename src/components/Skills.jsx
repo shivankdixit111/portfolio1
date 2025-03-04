@@ -65,7 +65,7 @@ const Skills = () => {
                   projects using the MERN stack.
               </p>
           </div>
-           <div>
+           <div className="carousel-card">
               <Carousel
                     swipeable={false}
                     draggable={false}
