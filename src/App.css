@@ -175,12 +175,12 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   background-size: cover;  
   position: relative;
-  margin-top:10rem;
+  margin: 10rem auto;
   background-image: url("./assets/images/banner-bg.png"); 
 
   & .banner-content{   
-    font-size: 1.8rem; 
-    margin: 12rem 4rem 4rem 6rem;  
+    font-size: 1.8rem;  
+    margin: 5rem;
 
     & button{
        border: 1px solid white;
@@ -269,12 +269,12 @@ nav {
   background-image: url('./assets//images/color-sharp.png');
   background-size: contain;
   background-repeat: no-repeat;
-  overflow: hidden;
-  /* height: 100vh; */
+  overflow: hidden; 
  }
  .skills-section-container{
     border-radius: 5rem;
     margin: 2rem 10rem;
+    position: relative;
     padding: 3rem;
     background-color: rgb(28, 25, 25);
 
@@ -381,7 +381,7 @@ nav {
   overflow: hidden;   
   width: 100% !important; 
   gap: 1.8rem;
-  margin-top: 4rem !important;
+  margin-top: 4rem !important; 
 }
 
 /* ------------ projectCard MediaQueries (1350px) ------------*/
@@ -416,8 +416,7 @@ nav {
     grid-template-columns: repeat(2, 1fr); 
     overflow: hidden;   
     gap: 5rem;
-    width: 100% !important; 
-    margin: 5rem;
+    width: 100% !important;  
   }
   .project-card{
     margin: auto !important; 
@@ -439,6 +438,7 @@ nav {
   .project-card-container{  
     display: grid;
     grid-template-columns: repeat(1, 1fr);  
+
   }
   .project-card{ 
     height: 250px !important;
