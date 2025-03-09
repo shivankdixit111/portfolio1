@@ -9,6 +9,7 @@ import simonGame from '../assets/images/simonGame.jpg'
 import rentEase from '../assets/images/rentEase.jpg'
 import musicSchool from '../assets/images/musicSchool.jpg'
 import todoApp from '../assets/images/todoApp.jpg'
+import blog_cms from '../assets/images/blog_cms.jpg'
 
 const projects = [
     {
@@ -18,10 +19,10 @@ const projects = [
       "projectUrl": 'https://rentease-3.onrender.com/listings',
     },
     {
-      "title": "Simon Game",
-      "description": "A classic Simon memory game built with HTML, CSS, and JavaScript, featuring interactive UI.",
-      "imgUrl": `${simonGame}`,
-      "projectUrl": 'https://shivankdixit111.github.io/Simongame/',
+      "title": "AI-Powered Blog CMS",
+      "description": "A content management system enhanced with AI, built using React for seamless blog creation and management.",
+      "imgUrl": `${blog_cms}`,
+      "projectUrl": "https://ai-blog-cms.vercel.app/"
     },
     {
       "title": "Music School",
@@ -34,7 +35,13 @@ const projects = [
       "description": "A task management app built with ReactJS and Context API for efficient state management.",
       "imgUrl": `${todoApp}`,
       "projectUrl": 'https://todo-app-two-rouge.vercel.app/'
-    }
+    },
+    {
+      "title": "Simon Game",
+      "description": "A classic Simon memory game built with HTML, CSS, and JavaScript, featuring interactive UI.",
+      "imgUrl": `${simonGame}`,
+      "projectUrl": 'https://shivankdixit111.github.io/Simongame/',
+    },
   ];
 
 const AboutMe = () => {
