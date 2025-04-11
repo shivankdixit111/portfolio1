@@ -7,22 +7,22 @@ import Experience from './Experience.jsx'
 import Proflie from './Proflie.jsx';
 import simonGame from '../assets/images/simonGame.jpg'
 import rentEase from '../assets/images/rentEase.jpg'
-import musicSchool from '../assets/images/musicSchool.jpg'
+import rideShareImg from '../assets/images/rideShareImg.png'
 import todoApp from '../assets/images/todoApp.jpg'
-import blog_cms from '../assets/images/blog_cms.jpg'
+import musicSchool from '../assets/images/musicSchool.jpg'
 
 const projects = [
+  {
+    "title": "RideShare - Student Ride Sharing App",
+    "description": "Ride sharing app for college students to share rides, save money, and travel together easily.",
+    "imgUrl": `${rideShareImg}`,
+    "projectUrl":  "https://rideshare-2wwm.onrender.com/"
+  },
     {
       "title": "RentEase - Rental Platform",
       "description": "A full-stack web app for booking and managing accommodations with authentication and CRUD operations.",
       "imgUrl": `${rentEase}`,
       "projectUrl": 'https://rentease-3.onrender.com/listings',
-    },
-    {
-      "title": "AI-Powered Blog CMS",
-      "description": "A content management system enhanced with AI, built using React for seamless blog creation and management.",
-      "imgUrl": `${blog_cms}`,
-      "projectUrl": "https://ai-blog-cms.vercel.app/"
     },
     {
       "title": "Music School",

@@ -8,6 +8,8 @@ const ProjectCard = ({title, description, imgUrl, projectUrl}) => {
     alignItems: "center",
     fontSize: "2.2rem",
     fontWeight: "500",
+    wordBreak: "break-word",
+    textAlign: "center",
   }
   const pStyle = {
     display: "flex",
@@ -25,7 +27,7 @@ const ProjectCard = ({title, description, imgUrl, projectUrl}) => {
     borderRadius: "2rem",
     backgroundImage: isHovered ? "linear-gradient(to right top, #b862b8, #b063bc, #a765c1, #9e66c4, #9468c8)" : `url(${imgUrl})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover", 
+    backgroundSize: "cover",  
   
     display: "flex",
     justifyContent: "center",
