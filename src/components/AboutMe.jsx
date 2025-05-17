@@ -19,10 +19,10 @@ const projects = [
     "projectUrl":  "https://rideshare-2wwm.onrender.com/"
   },
     {
-      "title": "RentEase - Rental Platform",
-      "description": "A full-stack web app for booking and managing accommodations with authentication and CRUD operations.",
-      "imgUrl": `${rentEase}`,
-      "projectUrl": 'https://rentease-3.onrender.com/listings',
+      "title": "DPverse",
+      "description": "A platform offering over 200 dynamic programming problems across various categories like digit DP, range DP etc, along with a leaderboard and progress tracking.",
+      "imgUrl": 'https://miro.medium.com/v2/resize:fit:1026/1*YEa9RovJmEyzsVwqIFTkeg.png',
+      "projectUrl": "https://dp-verse.vercel.app/"
     },
     {
       "title": "Music School",
