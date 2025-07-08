@@ -9,7 +9,7 @@ import simonGame from '../assets/images/simonGame.jpg'
 import rentEase from '../assets/images/rentEase.jpg'
 import rideShareImg from '../assets/images/rideShareImg.png'
 import todoApp from '../assets/images/todoApp.jpg'
-import musicSchool from '../assets/images/musicSchool.jpg'
+import personalFinanceVisualizer from '../assets/images/personalFinanceVisualizer.png'
 
 const projects = [
   {
@@ -25,10 +25,10 @@ const projects = [
       "projectUrl": "https://dp-verse.vercel.app/"
     },
     {
-      "title": "Music School",
-      "description": "A modern music streaming app built with Next.js, TypeScript, and Acertenity UI.",
-      "imgUrl": `${musicSchool}`,
-      "projectUrl": 'https://music-school-drauz7byw-shivank-dixits-projects.vercel.app/',
+      "title": "Personal Finance Visualizer",
+      "description": "A sleek web app to visualize and track personal finances with interactive charts.",
+      "imgUrl": `${personalFinanceVisualizer}`,
+      "projectUrl": 'https://personal-finance-visualizer-six-livid.vercel.app/',
     },
     {
       "title": "To-Do App",
